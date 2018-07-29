@@ -123,4 +123,10 @@ $(document).ready(function() {
 		body.slideToggle(300).closest('.accordion-item').toggleClass('active');
 	})
 
+	$('.review-slider').slick({
+		arrows: false,
+		dots: true,
+		vertical: true
+	});
+
 }); 

@@ -3,17 +3,29 @@
 	box-sizing: border-box
 
 body
-	font: 16px/1.44 'Conv_Lato-Regular'
-	color: #1f1f1f
+	display: flex
+	flex-direction: column
+	font: 14px/27px 'SansationRegular'
+	color: #333333
+	letter-spacing: -.05px
 
 h1
 	margin: 35px 0
 
 h2
 	margin: 20px 0
+	text-align: center
+	font: 600 45px/55px 'SansationRegular'
+	color: map-get($colors, secondary)
+
+h3
+	margin: 15px 0
+	text-align: center
+	font: 600 40px/50px 'SansationRegular'
+	color: map-get($colors, secondary)
 
 p
-	margin: 15px 0
+	margin: 20px 0
 
 a
 	text-decoration: none
@@ -27,12 +39,6 @@ a
 		content: ' '
 	&:after
 		clear: both
-
-.float-r
-	float: right
-
-.float-l
-	float: left
 
 .text-left
 	text-align: left
@@ -94,21 +100,6 @@ img
 		max-height: 100%
 		height: auto
 
-/*select*/
-.select
-	position: relative
-	width: 100%
-
-.select-list
-	display: none
-	position: absolute
-	top: 100%
-	left: 0
-	z-index: 30
-
-.select-option
-	cursor: pointer
-
 /*tabs ob JS*/
 .tab-toggle
 	display: inline-block
@@ -120,7 +111,52 @@ img
 .tab-content_active
 	display: block
 
+/*btn*/
+.btn
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	padding: 16px 30px
+	background-color: transparent
+	text-align: center
+	border: none
+	font: 18px/18px 'SansationRegular'	
+	color: #ffffff
+	cursor: pointer
+.btn_main
+	background: map-get($colors, main)
+.btn_sec
+	background: map-get($colors, secondary)
+
+
+.section-subtitle
+	text-align: center
+	font: 700 18px/18px 'Raleway', sans-serif
+	color: map-get($colors, main)
+	span
+		position: relative
+		display: inline-block
+		padding: 0 10px
+		background: #ffffff
+		&:before, &:after
+			position: absolute
+			top: 50%
+			display: block
+			content: ''
+			width: 50px
+			height: 2px
+			background: map-get($colors, main)
+		&:before
+			left: 0
+			transform: translate(-100%, -50%)
+		&:after
+			right: 0
+			transform: translate(100%, -50%)
+
+
+/*MAIN*/
 .wrapper
+	flex: 1 1 auto
 	display: flex
 	flex-direction: column
 	width: 100%
@@ -129,9 +165,332 @@ img
 
 .container
 	width: 100%
-	max-width: 1500px
+	max-width: $container-width
 	margin: 0 auto
-	padding: 0 20px
+	padding: 0 74px
+
 
 .content-wrapper
 	flex: 1 1 auto
+
+/*HEADER*/
+.header
+	background: #ffffff
+	border-top: 2px solid map-get($colors, main) 
+.header-inner
+	display: flex
+	justify-content: space-between
+	align-items: center
+.header-left
+	flex: 0 0 174px
+.header-logo
+	display: block
+	font-size: 0
+	line-height: 0
+.header-right
+	flex: 0 0 calc(100% - 174px)
+.header-action
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	margin-bottom: 23px
+	font-size: 0
+	.header-phone
+		display: inline-flex
+		align-items: center
+		margin-right: 10px
+		font-size: 15px
+		font-weight: 600
+		color: #000
+		span
+			margin-right: 5px
+			img
+				display: block
+	.btn
+		margin-left: 6px
+		padding: 11px 12px
+		border-radius: 0 0 6px 6px
+		font-size: 14px
+		span
+			margin-right: 8px
+.nav
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	margin-bottom: 16px
+	padding: 0 5px
+	.nav-item
+		margin-left: 35px
+	.nav-link
+		font-size: 14px
+		text-transform: uppercase
+		color: #333333
+		letter-spacing: .2px
+		transition: all .3s
+		&:hover
+			color: map-get($colors, main)
+
+/*BUNNER*/
+.bunner
+	position: relative
+	background: url(../img/bunner.jpg) no-repeat center top
+	background-size: cover
+	&:before
+		position: absolute
+		top: 0
+		height: 100%
+		left: 0
+		display: block
+		content: ''
+		width: calc(50% - 92px)
+		background: rgba(23, 66, 119, .85)
+.bunner-inner
+	display: flex
+	height: 540px
+.bunner-text
+	position: relative
+	width: calc(50% - 92px)
+	padding: 135px 0 134px
+	&:before
+		position: absolute
+		top: 0
+		height: 100%
+		left: 100%
+		display: block
+		content: ''
+		width: 101px
+		background: url(../img/bunner-bg.png) no-repeat left top
+.bunner-title
+	font: 50px/60px 'Lato', sans-serif
+	text-transform: uppercase
+	color: #ffffff
+	text-shadow: 5px 5px 4px rgba(0,0,0,.65)
+.bunner-subtitle
+	margin: 5px 0 22px
+	font: 22px/30px 'Raleway', sans-serif
+	color: #ffffff
+	letter-spacing: .2px
+.bunner-form
+	width: 107.565%
+	margin-bottom: 14px
+	.input-wrap
+		display: flex
+	input[type="text"]
+		width: calc(100% - 131px)
+		height: 50px
+		padding: 0 20px
+		background: #ffffff
+		border: none
+	button
+		position: relative
+		display: block
+		width: 125px
+		margin-left: 6px
+		padding: 0 5px
+		text-transform: uppercase
+
+
+/*WELCOME*/
+.welcome
+	padding: 70px 0
+.welcome-inner
+	width: 100%
+	max-width: 820px
+	margin: 0 auto
+	text-align: center
+	.section-subtitle
+		margin-top: -13px
+.welcome-media
+	position: relative
+	display: block
+	width: 100%
+	max-width: 700px
+	margin: 0 auto
+	&:before
+		display: block
+		content: ''
+		padding-top: 47.145%
+	iframe
+		position: absolute
+		top: 0
+		height: 100%
+		left: 0
+		width: 100%
+
+/*STAT*/
+.stat
+	padding: 40px 0 62px
+	background: #f0f0f0
+	h2
+		margin-bottom: 0
+.stat-wrap
+	display: flex
+.stat-left
+	width: 59.264%
+	p
+		margin: 2px 0
+	.for-img
+		margin: 20px 0
+.stat-right
+	width: 40.736%
+	padding-top: 21px
+	padding-left: 9.6%
+	padding-right: 3.448%
+	.full-img-wrap
+		position: relative
+	.full-img
+		display: block
+		border: 8px solid #d2d2d2
+		border-radius: 50%	
+		&:before
+			padding-top: 100%
+	.stat-label
+		position: absolute
+		top: -10px
+		right: -8px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		width: 100px
+		height: 100px
+		background: map-get($colors, main)
+		border-radius: 50%	
+		text-align: center
+		font: 700 12px/24px 'Lato', sans-serif
+		color: #ffffff
+		z-index: 10
+		span
+			font-size: 30px
+
+/*ABOUT*/
+.about
+	padding: 71px 0 30px
+.about-inner
+	display: flex
+	align-items: center
+.about-img
+	width: 44.323%
+	img
+		display: block
+.about-text
+	width: 55.677%
+	padding: 0 0 15px 40px
+	h3
+		margin-bottom: 8px
+	p
+		margin: 0 0 26px 0
+
+/*ADV*/
+.advantage
+	padding: 20px 0 43px
+.advantage-list
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	margin: 28px -10px
+.advantage-col
+	display: flex
+	width: 33.33%
+	padding: 0 10px
+.advantage-item
+	width: 100%
+	text-align: center
+.advantage-img
+	display: block
+	width: 100%
+	max-width: 120px
+	margin: 0 auto 14px
+	border: 1px solid map-get($colors, secondary)
+	border-radius: 50%
+	&:before
+		padding-top: 100%
+.advantage-text
+	font-size: 20px
+
+/*REVIEWS*/
+.reviews
+	padding: 28px 0 18px
+	background: map-get($colors, main)
+.review-inner
+	padding: 0 5px
+.review
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.review-img
+	position: relative
+	flex: 0 0 102px
+	margin-right: 24px
+	.review-icon
+		position: absolute
+		top: 6px
+		right: -10px
+		display: block
+		width: 35px
+		height: 35px
+		background: map-get($colors, secondary) url(../img/quote.png) no-repeat center
+		border-radius: 50%
+		z-index: 10
+	.full-img
+		width: 100%
+		border: 2px solid #ffffff
+		border-radius: 50%
+		&:before
+			padding-top: 100%
+.review-text
+	flex: 0 1 100%
+	max-width: 720px
+	color: #ffffff
+.review-slider
+	.slick-dots
+		display: inline-block
+		position: absolute
+		right: 0
+		top: 50%
+		transform: translate(100%, -50%)
+		li
+			margin: 8px 0
+		button
+			display: block
+			width: 14px
+			height: 14px
+			padding: 0
+			margin: 0
+			background: transparent
+			border: 1px solid #ffffff
+			border-radius: 50%	
+			cursor: pointer
+			text-indent: -9999px
+			transition: all .3s
+		li:hover, li.slick-active
+			button
+				background: #ffffff
+
+/*OFFER*/
+.offer
+	position: relative
+	background: linear-gradient(-259.5deg, map-get($colors, secondary) 53.7%, transparent 46.3%)
+.offer-inner
+	display: flex
+	align-items: center
+	height: 428px
+.offer-left
+	width: 55%
+.offer-right
+	width: 45%
+	.for-img
+		position: relative
+		.offer-icon
+			position: absolute
+			top: 10%
+			right: 15%
+			display: block
+			max-width: 100px
+		img
+			display: block
+
+/*FOOTER*/
+.footer
+	height: 10px
+	border: 1px solid red 
