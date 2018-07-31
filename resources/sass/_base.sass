@@ -11,6 +11,9 @@ body
 
 h1
 	margin: 35px 0
+	text-align: center
+	font: 600 60px/60px 'SansationRegular'
+	color: #ffffff
 
 h2
 	margin: 20px 0
@@ -29,6 +32,11 @@ h4
 	text-align: center
 	font: 600 35px/45px 'SansationRegular'
 	color: map-get($colors, secondary)
+
+h5
+	margin: 20px 0
+	font: 500 25px/35px 'SansationRegular'
+	color: map-get($colors, main)
 
 p
 	margin: 20px 0
@@ -161,6 +169,21 @@ img
 		&:after
 			right: 0
 			transform: translate(100%, -50%)
+
+.disc-red
+	li
+		position: relative
+		padding-left: 17px
+		&:before
+			position: absolute
+			left: 0
+			top: 10px
+			display: block
+			content: ''
+			width: 5px
+			height: 5px
+			background: map-get($colors, main)
+			border-radius: 50%
 
 
 /*MAIN*/
@@ -774,17 +797,44 @@ img
 			&:hover
 				text-decoration: underline
 
-.disc-red
-	li
-		position: relative
-		padding-left: 17px
-		&:before
-			position: absolute
-			left: 0
-			top: 10px
-			display: block
-			content: ''
-			width: 5px
-			height: 5px
-			background: map-get($colors, main)
-			border-radius: 50%
+/*BUNNER INSIDE*/
+.bunner-inside
+	background: map-get($colors, secondary) url(../img/bunner-1.jpg) no-repeat center top
+	background-size: cover
+.bunner-inside-inner
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	min-height: 300px
+	padding: 50px 0
+	h1
+		margin: 14px 0
+	.btn
+		padding: 16px 24px
+
+.content-inner
+	display: flex
+	padding: 78px 0 54px
+.content-aside
+	width: 31%
+	padding-right: 30px
+	border-right: 1px solid #cccccc
+	text-align: right
+.aside-title
+	margin: -6px 0 13px 0
+	text-align: right
+	color: map-get($colors, main)
+.aside-nav
+	a
+		display: inline-block
+		margin: 5px 0
+		font: 400 20px/30px 'SansationRegular'
+		color: #666666
+		&:hover
+			color: map-get($colors, secondary)
+.content-main
+	width: 69%
+	padding-left: 36px 
+	h2
+		margin-top: -10px
