@@ -129,10 +129,13 @@ img
 	font: 18px/18px 'SansationRegular'	
 	color: #ffffff
 	cursor: pointer
+	&:hover
+		box-shadow: 0 0 4px 0 rgba(0,0,0,.5)
 .btn_main
 	background: map-get($colors, main)
 .btn_sec
 	background: map-get($colors, secondary)
+
 
 
 .section-subtitle
@@ -232,7 +235,6 @@ img
 		text-transform: uppercase
 		color: #333333
 		letter-spacing: .2px
-		transition: all .3s
 		&:hover
 			color: map-get($colors, main)
 
@@ -295,7 +297,65 @@ img
 		padding: 0 5px
 		text-transform: uppercase
 
+/*PLANS*/
+.plan
+	padding: 121px 0 50px
+.plan-list
+	display: flex
+	flex-wrap: wrap;
+	justify-content: center
+	margin: 0 -18.5px
+.plan-col
+	display: flex
+	width: 33.33%
+	padding: 0 18.5px
+.plan-item
+	position: relative
+	display: block
+	width: 100%
+	padding: 15px 5px 82px 5px
+	background: linear-gradient(to bottom, #f2f2f2 57%, #ffffff 57%)
+	text-align: center
+	box-shadow: 0 0 12px 0 rgba(228,228,228, .75)
+	font: 600 13px/21px 'Raleway', sans-serif
+	color: map-get($colors, secondary)
+	letter-spacing: -.35px
+.plan-title
+	font: 700 25px/29px 'Raleway', sans-serif
+.plan-subtitle
+	font: 700 14px/20px 'Raleway', sans-serif
+.plan-img
+	margin: 8px 0 12px
+	&:before
+		padding-top: 54%
+.plan-btn 
+	position: absolute
+	bottom: 22px
+	left: 50%
+	transform: translateX(-50%)
+	max-width: 100%
+	white-space: nowrap
 
+.plan-item_combo
+	margin-top: -30px
+	background: linear-gradient(to bottom, map-get($colors, secondary) 50%, #ffffff 50%)
+	color: #ffffff
+	.plan-img:before
+		padding-top: 63.5%
+	img
+		left: auto
+		top: auto
+		max-width: 60%
+		max-height: 60%
+		transform: none
+		&:first-child
+			top: 13% 
+			left: 14%
+		&:last-child
+			right: 5%
+			bottom: 0
+	.plan-descr
+		color: map-get($colors, secondary)
 /*WELCOME*/
 .welcome
 	padding: 70px 0
@@ -468,7 +528,6 @@ img
 			border-radius: 50%	
 			cursor: pointer
 			text-indent: -9999px
-			transition: all .3s
 		li:hover, li.slick-active
 			button
 				background: #ffffff
@@ -476,8 +535,6 @@ img
 /*OFFER*/
 .offer
 	position: relative
-	/*background: linear-gradient(-259.5deg, map-get($colors, secondary) 53.7%, transparent 46.3%)*/
-	/* background: map-get($colors, secondary) */
 	&:before
 		position: absolute
 		left: 0
@@ -618,8 +675,116 @@ img
 	color: #ffffff
 	text-transform: uppercase 
 
+/*PARTNER*/
+.company
+	padding: 20px 0
+	background: #f0f0f0
+.company-list
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	justify-content: center
+	margin: 38px -25px 0
+.company-img
+	padding: 7px 25px
+	font-size: 0
+
 
 /*FOOTER*/
 .footer
-	height: 10px
-	border: 1px solid red 
+	color: #ffffff
+	a
+		color: inherit
+.footer-top
+	padding: 35px 0 27px
+	background: map-get($colors, secondary)
+.footer-top-inner
+	display: flex
+.footer-left
+	text-align: center
+	width: 31%
+.footer-logo
+	display: block
+	margin-bottom: 16px
+.footer-phone
+		display: inline-flex
+		align-items: center
+		margin-bottom: 16px
+		font-size: 22px
+		font-weight: 600
+		letter-spacing: .4px
+		span
+			margin-right: 8px
+			img
+				display: block
+.footer-center
+	margin-left: 33px
+	.disc-red
+		li
+			margin-bottom: 1px
+.footer-top-nav
+	a:hover
+		text-decoration: underline
+.footer-right
+	width: 320px
+	margin-left: auto
+.footer-title
+	margin: 20px 0 15px
+	font-size: 22px
+.footer-search
+	margin-top: -14px
+	.input-wrap
+		position: relative
+		display: block
+		width: 100%
+	input[type="text"]
+		width: 100%
+		height: 50px
+		padding: 0 65px 0 15px
+		background: #ffffff
+	button
+		position: absolute
+		top: 0
+		right: 0
+		display: block
+		width: 50px
+		height: 100%
+		background: map-get($colors, main) url(../img/plane.png) no-repeat center
+		border: none 
+		cursor: pointer
+		&:hover
+			box-shadow: 0 0 4px 0 rgba(0,0,0,.5)
+
+
+.footer-bottom
+	padding: 18px 0 14px
+	background: #143c6b
+	font-size: 14px
+	font-weight: 400
+	letter-spacing: 0
+.footer-bottom-inner
+	display: flex
+	justify-content: center
+	p
+		margin: 0
+	.footer-bottom-nav
+		margin: 0 5px
+		a
+			margin-right: 3px
+			&:hover
+				text-decoration: underline
+
+.disc-red
+	li
+		position: relative
+		padding-left: 17px
+		&:before
+			position: absolute
+			left: 0
+			top: 10px
+			display: block
+			content: ''
+			width: 5px
+			height: 5px
+			background: map-get($colors, main)
+			border-radius: 50%
