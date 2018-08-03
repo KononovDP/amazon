@@ -101,14 +101,33 @@
 		margin: 40px -15px 0
 	.company-img
 		padding: 7px 15px
+	
+	/*inside*/
+	.bunner-inside-inner
+		min-height: 200px
+	.content-inner
+		padding: 40px 0
+	.content-aside
+		padding-right: 20px
+	.aside-title
+		font-size: 35px
+	.content-main
+		padding-left: 20px
+		h2
+			font-size: 35px
+
 
 @media only screen and (max-width : 767px)
+	h1 
+		margin: 15px 0
+		font: 600 45px/55px 'SansationRegular'
+
 	h2 
 		margin: 10px 0
-		font: 600 35px/45px SansationRegular
+		font: 600 35px/45px 'SansationRegular'
 	h3 
 		margin: 10px 0
-		font: 600 30px/40px SansationRegular
+		font: 600 30px/40px 'SansationRegular'
 
 	
 	.wrapper
@@ -153,10 +172,10 @@
 
 	/*bunner*/
 	.bunner-title 
-		font: 40px/50px Lato,sans-serif
+		font: 40px/50px 'Lato',sans-serif
 	.bunner-subtitle 
 		margin: 10px 0 10px
-		font: 20px/24px Raleway,sans-serif
+		font: 20px/24px 'Raleway',sans-serif
 
 	/*plan*/
 	.plan
@@ -237,6 +256,25 @@
 		text-align: center
 	.footer-search
 		margin-top: 0
+
+	/**/
+	.content-inner
+		flex-wrap: wrap
+	.content-aside
+		width: 100%
+		margin-bottom: 20px
+		padding: 0 0 30px 0
+		border-right: none
+		border-bottom: 1px solid #ccc
+		text-align: left
+	.aside-title
+		text-align: left
+	.aside-nav a
+		margin: 5px
+	.content-main
+		width: 100%
+		padding-left: 0
+
 
 @media only screen and (max-width : 575px)
 	.wrapper
