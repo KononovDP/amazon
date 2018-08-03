@@ -1,55 +1,306 @@
 @import "vars"
 
-/*==========  Desktop First  ==========*/
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
-
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-	/**/
+	.header-nav
+		display: block!important
 
+@media only screen and (max-width : 1024px)
+	.container
+		padding: 0 15px
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
+	.header-left
+		flex: 0 0 125px
+	.header-right 
+		flex: 0 0 calc(100% - 125px)
+	.nav .nav-item 
+		margin-left: 20px
 
+	/*bunner*/
+	.bunner:before
+		width: 100%
+	.bunner-inner
+		height: auto
+	.bunner-text
+		width: 100%	
+		max-width: 600px
+		margin: 0 auto
+		padding: 50px 0
+		text-align: center
+		&:before
+			display: none
+	.bunner-form
+		width: 100%
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+	/*plan*/
+	.plan
+		padding: 70px 0 0
+	.plan-list
+		margin: 0 -10px
+	.plan-col
+		padding: 0 10px
 
+	/*welcome*/
+	.welcome
+		padding: 30px 0 40px
+
+	/*stat*/
+	.stat
+		padding: 30px 0
+	.stat-left
+		width: 60%
+	.stat-right
+		width: 40%
+		padding: 5%
+
+	/*about*/
+	.about
+		padding: 30px 0
+	.about-img
+		width: 40%
+	.about-text 
+		width: 60%
+		padding: 0 0 15px 20px
+
+	/*advantage*/
+	.advantage
+		padding: 30px 0
+
+	/*offer*/
+	.offer
+		background: map-get($colors, secondary)
+	.offer-inner
+		height: auto
+	.offer-left
+		width: 100%
+		padding: 30px 0 40px
+		&:before
+			display: none
+	.offer-right
+		display: none
+
+	/*wow*/
+	.wow
+		padding: 30px 0 40px
+		text-align: center
+	.wow-inner
+		margin: 0 auto
+	.wow-title
+		text-align: center
+
+	/*reasons*/ 
+	.reasons
+		padding: 10px 0 0
+		text-align: center
+		h2
+			text-align: center
+
+	/*company*/
+	.company
+		padding: 30px 0 40px
+	.company-list
+		margin: 40px -15px 0
+	.company-img
+		padding: 7px 15px
+
+@media only screen and (max-width : 767px)
+	h2 
+		margin: 10px 0
+		font: 600 35px/45px SansationRegular
+	h3 
+		margin: 10px 0
+		font: 600 30px/40px SansationRegular
+
+	
+	.wrapper
+		padding-top: 69px
+	.header
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		padding: 5px 0
+		z-index: 110
+		box-shadow: 0 0 5px 0 rgba(0,0,0,.5)
+	.header-inner 
+		padding-right: 40px
+	.header-nav
+		position: absolute
+		top: 100%
+		left: 0
+		width: 100%
+		display: none
+		background: #ffffff
+		z-index: 100
+		box-shadow: 0 5px 5px -5px rgba(0,0,0,.5)
+	.nav
+		flex-direction: column
+		.nav-item
+			margin: 10px 0
+	.header-action
+		margin-bottom: 0
+		.header-phone
+			margin-right: 0
+			font-size: 12px
+		.btn 
+			margin-left: 5px
+			padding: 8px 8px
+			border-radius: 5px
+			font-size: 12px
+			span
+				display: none
+	.mobile-menu
+		display: block
+
+	/*bunner*/
+	.bunner-title 
+		font: 40px/50px Lato,sans-serif
+	.bunner-subtitle 
+		margin: 10px 0 10px
+		font: 20px/24px Raleway,sans-serif
+
+	/*plan*/
+	.plan
+		padding-top: 30px
+	.plan-col
+		width: 100%
+		max-width: 500px
+	.plan-item
+		margin-bottom: 20px
+	.plan-item_combo
+		margin-top: 0
+
+	/*stat*/
+	.stat
+		text-align: center
+		h2
+			text-align: center
+	.stat-wrap
+		flex-wrap: wrap
+	.stat-left
+		width: 100%
+		margin-bottom: 20px
+	.stat-right
+		width: 100%
+		padding: 0
+		.full-img-wrap
+			max-width: 400px
+			margin: 0 auto
+
+	/*about*/
+	.about-inner
+		flex-wrap: wrap
+	.about-img
+		width: 100%
+		margin-bottom: 20px
+		img
+			margin: 0 auto
+	.about-text
+		width: 100%
+		padding: 0
+		text-align: center
+		h3
+			text-align: center
+
+	/*adv*/
+	.advantage-col
+		width: 100%
+		max-width: 500px
+	.advantage-item
+		margin-bottom: 20px
+
+	/*reasons*/
+	.reason-col
+		width: 50%
+	.reason
+		margin-bottom: 20px
+
+	/*footer*/
+	.footer-top-inner
+		flex-wrap: wrap
+	.footer-title
+		margin: 20px 0
+	.footer-left
+		width: 100%
+	.footer-logo
+		max-width: 150px
+		margin: 0 auto 16px
+	.footer-phone
+		margin-right: 10px
+	.footer-center
+		width: 100%
+		margin: 0
+		text-align: center
+		.disc-red li:before
+			display: none
+	.footer-right
+		width: 100%
+		text-align: center
+	.footer-search
+		margin-top: 0
+
+@media only screen and (max-width : 575px)
+	.wrapper
+		padding-top: 110px
+	.header
+		padding: 5px 0 10px
+	.header-inner
+		padding: 0
+		flex-wrap: wrap
+		justify-content: center
+	.header-left
+		flex: 0 0 100px
+		margin-bottom: 15px
+	.header-right
+		flex: 0 0 100%
+	.header-action
+		justify-content: space-around
+
+	/*reasos*/
+	.reason-col 
+		width: 100%
+		max-width: 500px
+
+	/*wow*/
+	.wow-title
+		font-size: 40px
+		line-height: 50px
+
+@media only screen and (max-width : 479px)
+	.wrapper
+		padding-top: 106px
+	.header-right
+		width: 100% 
+		flex: auto
+		margin: 0 -10px
+	.header-action 
+		.header-phone
+			font-size: 10px
+		.btn 
+			margin-left: 5px
+			padding: 5px 5px
+			border-radius: 3px
+			font-size: 10px
+
+	/*bunner*/
+	.bunner-form input[type=text] 
+		width: calc(100% - 100px)
+		height: 40px
+	.bunner-form button 
+		width: 100px
+		margin-left: 5px
+		font-size: 14px
+
+	/*review*/
+	.review
+		flex-wrap: wrap
+		justify-content: center
+	.review-img
+		margin: 0 0 15px 0
+	.review-text
+		max-width: none
+		text-align: center
+
+	/*footer*/
+	.footer-bottom-inner
+		flex-wrap: wrap
+		text-align: center
