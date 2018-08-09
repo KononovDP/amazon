@@ -1055,9 +1055,10 @@ select.form-text::-ms-expand
 .review-body
 	font: 400 16px/26px 'Lato', sans-serif
 
+.table-wrap
+	margin-bottom: 20px
 .quote-table
 	width: 100%
-	margin-bottom: 20px
 	border: 1px solid #cccccc
 	tr
 		background: #fff
@@ -1067,40 +1068,43 @@ select.form-text::-ms-expand
 		&:first-child
 			background: #ffffff
 	th
-		width: 50%
-		padding: 10px
+		width: 40%
+		padding: 10px 3px
 		border: 1px solid #cccccc
-		text-align: left
-		font: 600 16px/26px 'Lato', sans-serif
+		text-align: center
+		font: 600 10px/16px 'Lato', sans-serif
 		text-transform: uppercase
-	th.platinum-col
+	th.user-plan-col
+		width: 20%
 		text-align: center
-		background: #808080
 		color: #ffffff
-	th.gold-col
-		text-align: center
-		background: #b29600
-		color: #ffffff
+	th.user-plan_app
+		background: #878787
+	th.user-plan_combo
+		background: map-get($colors, main)
+	th.user-plan_syst
+		background: map-get($colors, secondary)
 	td
-		width: 50%
+		width: 40%
 		padding: 5px 10px
 		border: 1px solid #cccccc
-		font: 400 14px/24px 'Lato', sans-serif
-	.platinum-col
-		width: 25%
-		text-align: center
-	.gold-col
-		width: 25%
-		text-align: center
+		font: 400 12px/24px 'Lato', sans-serif
+	.user-plan-col
+		width: 16.666%
+		text-align: center 
 	.check
 		display: inline-block
 		width: 20px
 		height: 20px
-	.check_platinum
-		background: url(../img/check_platinum.png) no-repeat center
+		vertical-align: middle
+	.check_app
+		background: url(../img/check_app.png) no-repeat center
 		background-size: cover
-	.check_gold
-		background: url(../img/check_gold.png) no-repeat center
+	.check_combo
+		background: url(../img/check_combo.png) no-repeat center
+		background-size: cover
+	.check_syst
+		background: url(../img/check_syst.png) no-repeat center
 		background-size: cover
 
 
