@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-	var scrollTop = $(window).scrollTop();
+	var scrollTop = $(window).scrollTop(),
+		windowWidth = $(window).width();
 
 	//lock/unlock body scroll
 	function lockBody() {
@@ -57,5 +58,45 @@ $(document).ready(function() {
 	$('.mobile-menu').on('click' ,function() {
 		$('.header-nav').slideToggle(300);
 	});
+
+	if(windowWidth <768) {
+		$('.plantable [data-tabs="tabs-2"]').addClass('active');
+
+		$('.plantable th[data-tabs]').on('click' , function() {
+
+			$('.plantable th').removeClass('active');
+			$(this).addClass('active');
+
+			var dataTabs = $(this).attr("data-tabs");
+
+			$(this).closest('.plantable').find("td[data-tabs]").removeClass('active');
+			$(this).closest('.plantable').find("td[data-tabs='"+dataTabs+"']").addClass('active');
+
+			return false;
+		});
+	};
+
+	$(window).on('resize' , function() {
+		var windowWidth = $(window).width();
+		if(windowWidth < 768) {
+			$('.plantable [data-tabs="tabs-2"]').addClass('active');
+			$('.plantable .plan-third').addClass('active')
+
+			$('.plantable th[data-tabs]').on('click' , function() {
+
+				$('.plantable th').removeClass('active');
+				$(this).addClass('active');
+
+				var dataTabs = $(this).attr("data-tabs");
+
+				$(this).closest('.plantable').find("td[data-tabs]").removeClass('active');
+				$(this).closest('.plantable').find("td[data-tabs='"+dataTabs+"']").addClass('active');
+
+				return false;
+			});
+		}
+	})
+
+
 
 }); 

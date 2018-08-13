@@ -147,6 +147,26 @@ img
 .btn_sec
 	background: map-get($colors, secondary)
 
+.btn-outline
+	border: 1px solid #ffffff
+
+/*breadcrumbs*/
+.breadcrumbs
+	margin: 10px 0
+	text-align: center
+	font: 400 13px/13px 'Roboto', sans-serif
+	color: #ffffff
+.breadcrumb-link
+	display: inline-block
+	color: inherit
+	&:hover
+		text-decoration: underline
+.breadcrumb-link_current
+	pointer-events: none 
+	cursor: default
+	&:hover
+		text-decoration: none
+
 /*form*/
 .row
 	display: flex
@@ -303,6 +323,17 @@ select.form-text::-ms-expand
 			background: map-get($colors, main)
 			border-radius: 50%
 
+.disk-outline
+	li
+		margin-bottom: 10px
+		&:before
+			display: inline-block
+			content: ''
+			width: 10px
+			height: 10px 
+			margin: 0 15px 0 5px
+			border: 1px solid #656565
+			border-radius: 50%
 
 /*MAIN*/
 .wrapper
@@ -1131,3 +1162,183 @@ select.form-text::-ms-expand
 			width: 100px
 			height: 45px
 			padding: 0 10px  
+
+/*PLAN PAGE*/
+.page-header
+	padding: 30px 0
+	background: map-get($colors, secondary)
+	text-align: center
+	color: #ffffff
+.page-title
+	margin: 12px 0
+	font: 600 26px/30px 'Roboto', sans-serif
+	color: #ffffff
+
+.plan-table
+	padding: 120px 0 0
+	background: #ffffff
+.plantable
+	width: 100%
+	tr
+		background: #f7f7f7
+		&:nth-child(even)
+			background: #ebebeb
+		&:first-child, &:last-child, &.transparent
+			background: transparent
+	th
+		vertical-align: top
+		position: relative
+		padding: 81px 5px 20px 5px
+		text-align: center
+		font: 600 14px/22px 'Roboto', sans-serif
+		text-transform: uppercase
+		color: map-get($colors, secondary)
+		.for-img
+			position: absolute
+			top: 0
+			left: 0
+			display: block
+			width: 100%
+			height: 132px
+			margin-top: -70px
+			margin-bottom: 14px
+			font-size: 0
+		.best-value
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			background: map-get($colors, main)
+			text-align: center
+			font: 600 12px/25px 'Roboto', sans-serif
+			color: #ffffff
+			text-transform: uppercase
+	th.plan-first, .transparent
+		padding-left: 35px
+		padding-top: 10px
+		text-align: left
+		font-weight: 400
+		color: #656565
+		text-transform: none
+		p
+			margin: 0 0 11px 0
+		span
+			font: 600 18px/22px 'Roboto', sans-serif
+			color: map-get($colors, secondary)
+			text-transform: uppercase
+	td
+		padding: 17px 35px 16px
+		text-align: center
+	tr:first-child .plan-second, 
+	tr:first-child .plan-third, 
+	tr:first-child .plan-fourth
+		border-top: 1px solid #d7d7d7
+	tr:last-child .plan-second, 
+	tr:last-child .plan-third, 
+	tr:last-child .plan-fourth
+		border-bottom: 1px solid #d7d7d7
+	.plan-first
+		width: 23%
+		text-align: left
+	.plan-second, .plan-third, .plan-fourth
+		width: 23%
+		border-left: 1px solid #d7d7d7
+		border-right: 1px solid #d7d7d7
+	.plan-third
+		background: rgba(23, 66, 119, .12)
+	.plan-empty
+		width: 4%
+		padding: 0
+	.mobile-text
+		display: none
+	.plantable-action
+		font: 600 13px/22px 'Roboto', sans-serif
+		color: map-get($colors, main)
+		text-transform: uppercase
+		td
+			padding: 0
+			vertical-align: bottom
+		span
+			display: block
+			margin: 13px 0 10px
+		.btn
+			display: block
+			text-transform: uppercase
+
+.plan-add
+	padding: 30px 0 50px
+	background: #ffffff	
+.add-list
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	margin: 0 -15px
+.add-col
+	display: flex
+	width: 20%
+	padding: 15px
+.add-item
+	position: relative
+	cursor: pointer
+	input
+		position: absolute
+		opacity: 0
+	.add-item-inner
+		position: relative
+		display: block
+		padding: 15px 20px 20px 20px 
+		border: 1px solid #d3d3d3
+		&:before
+			box-sizing: border-box
+			position: absolute
+			top: 5px
+			right: 8px
+			display: block
+			content: ''
+			width: 10px	
+			height: 10px
+			border: 1px solid #d3d3d3
+			border-radius: 2px
+			text-align: center
+			font-size: 14px
+			line-height: 4px
+			color: #36b346
+	input:checked ~ .add-item-inner:before
+		content: '\2714'
+
+.add-title
+	display: block
+	margin: 0 0 7px 0
+	font: 600 13px/22px 'Roboto', sans-serif
+	color: #454545
+.add-subtitle
+	display: block
+	font: 400 12px/14px 'Roboto', sans-serif
+	color: #616161
+	
+.plan-bunner 
+	min-height: 244px
+	padding: 40px 0 60px
+	background: map-get($colors, secondary) url(../img/plan-bunner-img.png) no-repeat center top
+	background-size: cover
+	text-align: center
+	color: #ffffff
+	h3
+		color: inherit
+	p
+		margin: 0 0 20px 0
+.plan-bunner-inner
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+.plan-about
+	padding: 30px 0 25px
+	background: #ffffff
+.plan-about-inner
+	display: flex
+.plan-about-left
+	width: 50%
+.plan-about-right
+	width: 50%

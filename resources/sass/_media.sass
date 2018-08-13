@@ -157,6 +157,17 @@
 	.quote-final h2, .quote-final h3, .quote-final h4, .quote-final h5
 		text-align: center
 
+	/*plan page*/
+	.plantable .transparent, .plantable th.plan-first
+		padding-left: 20px
+	.plantable td 
+		padding: 10px 20px 10px
+	.add-list
+		margin: 0 -7.5px
+	.add-col
+		width: 25%
+		padding: 7.5px
+
 @media only screen and (max-width : 767px)
 	h1 
 		margin: 15px 0
@@ -315,6 +326,88 @@
 		width: 100%
 		padding-left: 0
 
+	/*plan page*/
+	.plan-table
+		padding: 13px 0
+	.platable
+		border: 1px solid #d6d6d6
+	.plan-first, .plan-empty
+		display: none
+	.plantable 
+		width: calc(100% + 30px)
+		margin: 0 -15px
+		tr
+			display: flex
+			background-color: transparent!important
+		th 
+			width: 33.33%!important
+			padding-top: 10px
+			padding-bottom: 10px
+			font: 600 12px/22px Roboto,sans-serif
+			.for-img
+				position: static
+				display: block
+				height: 65px
+				margin-top: 0
+				img
+					height: 65px
+			.best-value
+				position: static
+				display: block
+				width: auto
+				margin: 10px -5px 7px 
+		th[data-tabs].active
+			background: #ebebeb
+
+
+
+		td
+			background: #ebebeb!important
+			border-bottom: 1px solid #d6d6d6
+			border-left: none
+			border-right: none
+			margin-bottom: 2px
+		td[data-tabs]
+			display: none
+			width: 100%
+		td[data-tabs].active
+			display: block
+		.plan-fourth_empty, .plan-second_empty
+			display: none !important
+
+		.mobile-text
+			display: block
+		.for-img
+			display: none
+		.transparent
+			padding: 0
+			td
+				display: none
+			.plan-first
+				width: 100%	
+				text-align: center
+		.plan-third
+			background-color: transparent
+		.plantable-action
+			td
+				background-color: transparent !important
+			span
+				margin: 20px 0
+
+	.plan-add
+		padding-top: 0
+	.add-col
+		width: 33.33%
+	.plan-bunner
+		padding: 20px 0 40px
+	.plan-about-inner
+		flex-wrap: wrap
+	.plan-about-left
+		width: 100%
+	.plan-about-right
+		width: 100%
+		order: -1
+
 @media only screen and (max-width : 575px)
 	.wrapper
 		padding-top: 110px
@@ -353,6 +446,10 @@
 			line-height: 24px
 	.quote-right-title 
 		font: 600 35px/45px Lato,sans-serif
+
+	/*plan page*/
+	.page-title
+		font-size: 20px
 
 @media only screen and (max-width : 479px)
 	.wrapper
@@ -413,3 +510,7 @@
 		td
 			padding: 5px 5px
 			line-height: 18px
+
+	/*plan page*/
+	.add-col
+		width: 50%
