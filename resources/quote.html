@@ -71,11 +71,11 @@
 					<div class="quote-inner">
 						<div class="qoute-tabs tabs-wrapper">
 							<div class="tabs-header">
-								<div class="tab-toggle tab-toggle_active" data-tab="tab-1">
+								<div class="tab-toggle" data-tab="tab-1">
 									<div class="tab-toggle-title">Step 1</div>
 									<div class="tab-toggle-subtitle">Get A Free Quote</div>
 								</div>
-								<div class="tab-toggle" data-tab="tab-2">
+								<div class="tab-toggle tab-toggle_active" data-tab="tab-2">
 									<div class="tab-toggle-title">Step 2</div>
 									<div class="tab-toggle-subtitle">Select a Plan</div>
 								</div>
@@ -85,7 +85,7 @@
 								</div>
 							</div>
 							<div class="tabs-body">
-								<div class="tab-content tab-content_active" data-tab="tab-1">
+								<div class="tab-content" data-tab="tab-1">
 									<div class="quote-wrap">
 										<div class="quote-left">
 											<h3>Get A Free Quote</h3>
@@ -205,137 +205,420 @@
 										</div>
 									</div>
 								</div>
-								<div class="tab-content" data-tab="tab-2">
+								<div class="tab-content tab-content_active" data-tab="tab-2">
 									<div class="quote-wrap">
 										<div class="quote-left">
 											<h3>Select your plan</h3>
-											<div class="table-wrap">
-												<table class="quote-table">
+											<div class="plan-table plan-table_sm">
+												<table class="plantable">
 													<tr>
-														<th>Covered items</th>
-														<th class="user-plan-col user-plan_app">Appliances plan</th>
-														<th class="user-plan-col user-plan_combo">PRIME COMBO Plan</th>
-														<th class="user-plan-col user-plan_syst">Systems plan</th>
+														<th class="plan-first">
+															<p>Click a system or appliance to view coverage details and exclusions.</p>
+															<span>Systems</span>
+														</th>
+														<th class="plan-second" data-tabs="tabs-1">
+															<span class="for-img"><img src="img/plan-table-second.png" alt=""></span>
+															<span>SYSTEM PLAN</span>
+														</th>
+														<th class="plan-empty"></th>
+														<th class="plan-third active" data-tabs="tabs-2">
+															<span class="for-img"><img src="img/plan-table-third.png" alt=""></span>
+															<span>COMBO PLAN</span>
+															<span class="best-value">best value</span>
+														</th>
+														<th class="plan-empty"></th>
+														<th class="plan-fourth" data-tabs="tabs-3">
+															<span class="for-img"><img src="img/plan-table-fourth.png" alt=""></span>
+															<span>APPLIANCE PLAN</span>
+														</th>
 													</tr>
 													<tr>
-														<td>Air Conditioning System (2 units)</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"></td>
-														<td class="user-plan-col"></td>
+														<td class="plan-first">Heating w/Ductwork</td>
+														<td class="plan-second"  data-tabs="tabs-1">
+															<span class="mobile-text">Heating w/Ductwork</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span class="mobile-text">Heating w/Ductwork</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth plan-fourth_empty" data-tabs="tabs-3"></td>
 													</tr>
 													<tr>
-														<td>Heating System (2 units)</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"></td>
-														<td class="user-plan-col"></td>
+														<td class="plan-first">Electrical</td>
+														<td class="plan-second"  data-tabs="tabs-1">
+															<span class="mobile-text">Electrical</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span class="mobile-text">Electrical</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth plan-fourth_empty" data-tabs="tabs-3"></td>
 													</tr>
 													<tr>
-														<td>Refrigerator</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"></td>
-														<td class="user-plan-col"></td>
+														<td class="plan-first">Doorbells</td>
+														<td class="plan-second" data-tabs="tabs-1">
+															<span class="mobile-text">Doorbells</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span class="mobile-text">Doorbells</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth plan-fourth_empty" data-tabs="tabs-3"></td>
 													</tr>
 													<tr>
-														<td>Clothes Washer</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"></td>
-														<td class="user-plan-col"></td>
+														<td class="plan-first">Smoke Detectors</td>
+														<td class="plan-second" data-tabs="tabs-1">
+															<span class="mobile-text">Smoke Detectors</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span class="mobile-text">Smoke Detectors</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth plan-fourth_empty" data-tabs="tabs-3"></td>
 													</tr>
 													<tr>
-														<td>Clothes Dryer</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"></td>
-														<td class="user-plan-col"></td>
+														<td class="plan-first">Ceiling Fans</td>
+														<td class="plan-second" data-tabs="tabs-1">
+															<span class="mobile-text">Ceiling Fans</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span class="mobile-text">Ceiling Fans</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth plan-fourth_empty" data-tabs="tabs-3"></td>
 													</tr>
 													<tr>
-														<td>Plumbing System</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"><span class="check check_combo"></span></td>
-														<td class="user-plan-col"><span class="check check_syst"></span></td>
+														<td class="plan-first">Plumbing (incl. stoppages)</td>
+														<td class="plan-second" data-tabs="tabs-1">
+															<span class="mobile-text">Plumbing (incl. stoppages)</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span class="mobile-text">Plumbing (incl. stoppages)</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth plan-fourth_empty" data-tabs="tabs-3"></td>
 													</tr>
 													<tr>
-														<td>Plumbing Stoppage</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"><span class="check check_combo"></span></td>
-														<td class="user-plan-col"><span class="check check_syst"></span></td>
+														<td class="plan-first">Water Heaters</td>
+														<td class="plan-second" data-tabs="tabs-1">
+															<span class="mobile-text">Water Heaters</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span class="mobile-text">Water Heaters</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth plan-fourth_empty" data-tabs="tabs-3"></td>
+													</tr>
+
+													<tr class="transparent">
+														<td class="plan-first" data-tabs="tabs-2"><span>Appliances</span></td>
+														<td class="plan-second"></td>
+														<td class="plan-empty"></td>
+														<td class="plan-third"></td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth"></td>
+													</tr>
+
+													<tr>
+														<td class="plan-first">Air Conditioning w/Ductwork</td>
+														<td class="plan-second plan-second_empty" data-tabs="tabs-1">
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span class="mobile-text">Air Conditioning w/Ductwork</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth" data-tabs="tabs-3">
+															<span class="mobile-text">Air Conditioning w/Ductwork</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
 													</tr>
 													<tr>
-														<td>Water Heater</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"><span class="check check_combo"></span></td>
-														<td class="user-plan-col"><span class="check check_syst"></span></td>
+														<td class="plan-first">Heating w/Ductwork</td>
+														<td class="plan-second plan-second_empty" data-tabs="tabs-1">
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span class="mobile-text">Heating w/Ductwork</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth" data-tabs="tabs-3">
+															<span class="mobile-text">Heating w/Ductwork</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
 													</tr>
 													<tr>
-														<td>Whirlpool Buthtub</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"><span class="check check_combo"></span></td>
-														<td class="user-plan-col"><span class="check check_syst"></span></td>
+														<td class="plan-first">Electrical</td>
+														<td class="plan-second plan-second_empty" data-tabs="tabs-1">
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span class="mobile-text">Electrical</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth" data-tabs="tabs-3">
+															<span class="mobile-text">Electrical</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
 													</tr>
 													<tr>
-														<td>Electrical System</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"><span class="check check_combo"></span></td>
-														<td class="user-plan-col"><span class="check check_syst"></span></td>
+														<td class="plan-first">Doorbells</td>
+														<td class="plan-second plan-second_empty" data-tabs="tabs-1">
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span class="mobile-text">Doorbells</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth" data-tabs="tabs-3">
+															<span class="mobile-text">Doorbells</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
 													</tr>
 													<tr>
-														<td>Oven / Range / Stove</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"><span class="check check_combo"></span></td>
-														<td class="user-plan-col"><span class="check check_syst"></span></td>
+														<td class="plan-first">Smoke Detectors</td>
+														<td class="plan-second plan-second_empty" data-tabs="tabs-1">
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span class="mobile-text">Smoke Detectors</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth" data-tabs="tabs-3">
+															<span class="mobile-text">Smoke Detectors</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
 													</tr>
 													<tr>
-														<td>Cooktop</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"><span class="check check_combo"></span></td>
-														<td class="user-plan-col"><span class="check check_syst"></span></td>
+														<td class="plan-first">Ceiling Fans</td>
+														<td class="plan-second plan-second_empty" data-tabs="tabs-1">
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span class="mobile-text">Ceiling Fans</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth" data-tabs="tabs-3">
+															<span class="mobile-text">Ceiling Fans</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
 													</tr>
 													<tr>
-														<td>Built-In Sump Pump</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"><span class="check check_combo"></span></td>
-														<td class="user-plan-col"><span class="check check_syst"></span></td>
+														<td class="plan-first">Plumbing (incl. stoppages)</td>
+														<td class="plan-second plan-second_empty" data-tabs="tabs-1">
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span class="mobile-text">Plumbing (incl. stoppages)</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth" data-tabs="tabs-3">
+															<span class="mobile-text">Plumbing (incl. stoppages)</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
 													</tr>
 													<tr>
-														<td>Dishwasher</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"><span class="check check_combo"></span></td>
-														<td class="user-plan-col"><span class="check check_syst"></span></td>
+														<td class="plan-first">Water Heaters</td>
+														<td class="plan-second plan-second_empty" data-tabs="tabs-1"></td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span class="mobile-text">Water Heaters</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth" data-tabs="tabs-3">
+															<span class="mobile-text">Water Heaters</span>
+															<span class="for-img"><img src="img/check-green.png" alt=""></span>
+														</td>
 													</tr>
-													<tr>
-														<td>Garbage Disposal</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"><span class="check check_combo"></span></td>
-														<td class="user-plan-col"><span class="check check_syst"></span></td>
-													</tr>
-													<tr>
-														<td>Trash Compactor</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"><span class="check check_combo"></span></td>
-														<td class="user-plan-col"><span class="check check_syst"></span></td>
-													</tr>
-													<tr>
-														<td>Ductwork</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"><span class="check check_combo"></span></td>
-														<td class="user-plan-col"><span class="check check_syst"></span></td>
-													</tr>
-													<tr>
-														<td>Garage Door Opener</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"><span class="check check_combo"></span></td>
-														<td class="user-plan-col"><span class="check check_syst"></span></td>
-													</tr>
-													<tr>
-														<td>Ceiling and Exhaust Fans</td>
-														<td class="user-plan-col"><span class="check check_app"></span></td>
-														<td class="user-plan-col"><span class="check check_combo"></span></td>
-														<td class="user-plan-col"><span class="check check_syst"></span></td>
+													<tr class="plantable-action">
+														<td class="plan-first"></td>
+														<td class="plan-second" data-tabs="tabs-1">
+															<a href="#" class="btn btn_sec">GEt quote</a>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-third" data-tabs="tabs-2">
+															<span>61% of customers choose the Combo Plan</span>
+															<a href="#" class="btn btn_main">GEt quote</a>
+														</td>
+														<td class="plan-empty"></td>
+														<td class="plan-fourth" data-tabs="tabs-3">
+															<a href="#" class="btn btn_sec">GEt quote</a>
+														</td>
 													</tr>
 												</table>
 											</div>
-											<div class="text-center">
-												<a href="#" class="btn btn_main">Continue to step 3</a>
-											</div>
+
+											<div class="plan-add plan-add_sm">
+												<div class="plan-add-inner">
+													<h3>Additional Optional Coverage</h3>
+													<div class="add-list">
+														<div class="add-col">
+															<label class="add-item">
+																<input type="checkbox">	
+																<span class="add-item-inner">
+																	<span class="add-title">Lorem ipsum</span>
+																	<span class="add-subtitle">Lorem ipsum dolor sit amet, consectetuer </span>
+																</span>
+															</label>
+														</div>
+														<div class="add-col">
+															<label class="add-item">
+																<input type="checkbox">	
+																<span class="add-item-inner">
+																	<span class="add-title">Lorem ipsum</span>
+																	<span class="add-subtitle">Lorem ipsum dolor sit amet, consectetuer </span>
+																</span>
+															</label>
+														</div>
+														<div class="add-col">
+															<label class="add-item">
+																<input type="checkbox">	
+																<span class="add-item-inner">
+																	<span class="add-title">Lorem ipsum</span>
+																	<span class="add-subtitle">Lorem ipsum dolor sit amet, consectetuer </span>
+																</span>
+															</label>
+														</div>
+														<div class="add-col">
+															<label class="add-item">
+																<input type="checkbox">	
+																<span class="add-item-inner">
+																	<span class="add-title">Lorem ipsum</span>
+																	<span class="add-subtitle">Lorem ipsum dolor sit amet, consectetuer </span>
+																</span>
+															</label>
+														</div>
+														<div class="add-col">
+															<label class="add-item">
+																<input type="checkbox">	
+																<span class="add-item-inner">
+																	<span class="add-title">Lorem ipsum</span>
+																	<span class="add-subtitle">Lorem ipsum dolor sit amet, consectetuer </span>
+																</span>
+															</label>
+														</div>
+														<div class="add-col">
+															<label class="add-item">
+																<input type="checkbox">	
+																<span class="add-item-inner">
+																	<span class="add-title">Lorem ipsum</span>
+																	<span class="add-subtitle">Lorem ipsum dolor sit amet, consectetuer </span>
+																</span>
+															</label>
+														</div>
+														<div class="add-col">
+															<label class="add-item">
+																<input type="checkbox">	
+																<span class="add-item-inner">
+																	<span class="add-title">Lorem ipsum</span>
+																	<span class="add-subtitle">Lorem ipsum dolor sit amet, consectetuer </span>
+																</span>
+															</label>
+														</div>
+														<div class="add-col">
+															<label class="add-item">
+																<input type="checkbox">	
+																<span class="add-item-inner">
+																	<span class="add-title">Lorem ipsum</span>
+																	<span class="add-subtitle">Lorem ipsum dolor sit amet, consectetuer </span>
+																</span>
+															</label>
+														</div>
+														<div class="add-col">
+															<label class="add-item">
+																<input type="checkbox">	
+																<span class="add-item-inner">
+																	<span class="add-title">Lorem ipsum</span>
+																	<span class="add-subtitle">Lorem ipsum dolor sit amet, consectetuer </span>
+																</span>
+															</label>
+														</div>
+														<div class="add-col">
+															<label class="add-item">
+																<input type="checkbox">	
+																<span class="add-item-inner">
+																	<span class="add-title">Lorem ipsum</span>
+																	<span class="add-subtitle">Lorem ipsum dolor sit amet, consectetuer </span>
+																</span>
+															</label>
+														</div>
+														<div class="add-col">
+															<label class="add-item">
+																<input type="checkbox">	
+																<span class="add-item-inner">
+																	<span class="add-title">Lorem ipsum</span>
+																	<span class="add-subtitle">Lorem ipsum dolor sit amet, consectetuer </span>
+																</span>
+															</label>
+														</div>
+														<div class="add-col">
+															<label class="add-item">
+																<input type="checkbox">	
+																<span class="add-item-inner">
+																	<span class="add-title">Lorem ipsum</span>
+																	<span class="add-subtitle">Lorem ipsum dolor sit amet, consectetuer </span>
+																</span>
+															</label>
+														</div>
+														<div class="add-col">
+															<label class="add-item">
+																<input type="checkbox">	
+																<span class="add-item-inner">
+																	<span class="add-title">Lorem ipsum</span>
+																	<span class="add-subtitle">Lorem ipsum dolor sit amet, consectetuer </span>
+																</span>
+															</label>
+														</div>
+														<div class="add-col">
+															<label class="add-item">
+																<input type="checkbox">	
+																<span class="add-item-inner">
+																	<span class="add-title">Lorem ipsum</span>
+																	<span class="add-subtitle">Lorem ipsum dolor sit amet, consectetuer </span>
+																</span>
+															</label>
+														</div>
+														<div class="add-col">
+															<label class="add-item">
+																<input type="checkbox">	
+																<span class="add-item-inner">
+																	<span class="add-title">Lorem ipsum</span>
+																	<span class="add-subtitle">Lorem ipsum dolor sit amet, consectetuer </span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>									
 										</div>
 
 										<div class="quote-right">
