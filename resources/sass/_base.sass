@@ -1306,6 +1306,21 @@ select.form-text::-ms-expand
 	input:checked ~ .add-item-inner:before
 		content: '\2714'
 
+.add-item_static
+	cursor: default
+	.add-item-inner
+		&:before
+			display: none
+
+.plan-add_sm
+	padding: 0 0 30px
+	background-color: transparent
+	.add-list
+		margin: 0 -7.5px
+	.add-col
+		width: 33.33%
+		padding: 7.5px
+
 .add-title
 	display: block
 	margin: 0 0 7px 0
@@ -1315,7 +1330,7 @@ select.form-text::-ms-expand
 	display: block
 	font: 400 12px/14px 'Roboto', sans-serif
 	color: #616161
-	
+
 .plan-bunner 
 	min-height: 244px
 	padding: 40px 0 60px
